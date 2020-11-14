@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EE202 Circuit Theory II Report Template
+% By Ozgur Gulsuna
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=30mm,
+	right=30mm,
+	top=20mm,
+	bottom=20mm,
+}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}[language=Matlab]
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.5,0.5}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.6,0.1,0.1}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=false,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{codegreen},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=false,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{codepurple}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\usepackage{changepage}
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\begin{document}
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.1mm}} 
+\center % Center everything on the page
+ 
+%---------------------------------------------------------------------------------
+%	HEADING SECTIONS (Enter the Homework/assignment No., only)
+%---------------------------------------------------------------------------------
+\textsc{\Large EE202 Circuit Theory II }\\[0.5cm] % heading course Number
+\textsc{\Large  Term Project Part 1 Report}\\[0.5cm] % heading course name
+%\textsc{\large Homework/Assignment No:- }\\[0.5cm] % Minor heading
+%---------------------------------------------------------------------------------
+%	TITLE SECTION (Replace 'TITLE' with the Homework/assignment Name/title)
+%---------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Systematic Techniques of Circuit Analysis}\\[0.1cm] % Title of your Homework/assignment
+\HRule \\[1.5cm]
+ 
+%---------------------------------------------------------------------------------
+%	AUTHOR SECTION (EDIT THE NAME and T.NO., only)
+%---------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{center} \large
+
+\emph{ }\\
+Özgür \textsc{Gülsuna}\\ 2307668  % Enter Your name and T.No.
+
+
+
+
+\end{center}
+
+
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%\emph{Instructor:} \\
+%Dr.Yeşim Serinağaoğlu \textsc{} % Supervisor's Name
+%\end{flushright}
+\end{minipage}\\[10cm]
+\vfill % Fill the rest of the page with white-space
+
+{\large \today}\\[0cm]\\ % Date, change the \today to a set date if you want to be precise
+Time-Spent: 8 hours
+
+
+\end{titlepage}
+
+\newpage
+
+% Do not edit the below sections, enter all details in respective chapters
+% Add the images/screen-shorts to the image folder and insert them in the respective chapters
+\input{Chapters/Introduction}
+
+
+
+
+
+%---------------------------------------------------------------------------------
+
+
+\end{document}
+
+
+% Note: Again, you don’t need to answer just the above questions. They are being provided to give you a flavor of what is required for each section. Use your judgment and initiative to add or subtract based on the specific homework. You can add any other conclusion or discuss any other aspect of your effort that you think it is important to highlight.
+
+% Also ensure to attach the MATLAB or MULTISIM files with this report
