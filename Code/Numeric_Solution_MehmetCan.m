@@ -9,8 +9,8 @@ C2=100*10^-6;
 
 A=[0,0,1/C1;0,-1/(R*C2),1/C2;-1/L,-1/L,0];
 B=[0;0;1/L];
-sample_count=10000;
-time=linspace(0,0.1,sample_count);
+sample_count=2000000;
+time=linspace(0,5,sample_count);
 X=[0.0;0.0;0.0];%Vc1;Vc2;iL
 res=X*time;
 i=1;
